@@ -1,0 +1,15 @@
+<template>
+  <lightning-input title="Condition rendering component"  type="checkbox" class="slds-m-around_medium" label="Show Detail" onchange={handleChange}>
+
+  </lightning-input>
+  <template  if:true={areDetailVisible}>
+<div>
+    This is true block
+</div>
+  </template>
+  <template  if:false={areDetailVisible}>
+    <div>
+        This is false block
+    </div>
+      </template>
+</template>
